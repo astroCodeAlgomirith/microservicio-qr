@@ -1,7 +1,7 @@
 const express = require('express');
 const qr = require('qrcode'); // Importamos la biblioteca de QR
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4001;
 
 // Una ruta base para saber que está vivo
 app.get('/', (req, res) => {
